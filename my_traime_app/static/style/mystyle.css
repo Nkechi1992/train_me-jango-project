@@ -1,0 +1,173 @@
+/* The container div of most home and program pages */
+.main{
+    background-color: bisque;
+    text-align: justify;
+}
+
+#prog_heading{
+    text-align: center;
+    font-size: 500%;
+    margin-bottom: 8%;
+    color: darkred;
+    text-shadow: chartreuse 1px 1px;
+}
+
+.sub_head{
+    margin-bottom: 8%;
+    border-bottom: 2px solid black;
+}
+
+.sub_sub{
+    margin-bottom: 5%;
+    text-decoration: underline;
+    font-size: 200%;
+}
+
+.prog_text{
+    font-size: 120%;
+}
+
+/* Desigining the footer */
+
+footer{
+  background-color: #7e828a;
+        margin-top: 6%;
+        
+}
+.foot_link{
+    margin-left: 68%;
+    font-size: larger;
+   
+}
+.footer{
+    font-weight: 700;
+    color: rgb(97, 6, 24);
+    font-size: x-large;
+}
+
+/* Desining about the training platform */
+.about_img{
+  
+    background: linear-gradient(#e1eaed, #7e828a);
+    background-image: url("{% static 'images/woman_img20.jpg' %}");
+    background-size: 100% 100%;
+    background-position: 100%;
+    color: hsl(275, 50%, 30%);
+    font-size: xx-large;
+    font-weight: 600;
+    margin-bottom: 6%;
+  } 
+ 
+    /* about me row for the homepage */
+  .heading_1{
+    color: rgb(210, 32, 32) !important;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    text-decoration: solid;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  #main_h{text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3% ;}
+
+.label_name{
+        text-align: center;
+        margin-left: 20rem;
+        font-weight: 800;
+        font-size: larger;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        
+      }
+
+      .input_id{
+        float: right;
+        display: block;
+        margin-right: 27rem;
+        width: 300px;
+        height: 40px;
+        align-items: center;
+      
+        /* margin-right: 20px; */
+      }
+
+      .topic-heading{
+        top: 100rem;
+        margin: 6%;
+        font-weight: 1000;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 5% !important;
+        
+      }
+
+      .submit_id{
+        margin-left: 30rem;
+        margin-bottom: 10%;
+        background-color: rgb(87, 61, 213);
+        width: 10rem;
+        border-radius: 30%;
+        color: aliceblue;
+        font-weight: 500;
+        font-size: larger;
+      }
+
+      .profile{
+       margin: 4%;
+       background-color: antiquewhite;
+       margin-right: 30em;
+       font-size: larger;
+       font-weight: 500;
+       border: 2px solid rgb(33, 10, 10) ;
+      }
+
+      .responders_list{
+        margin-top: 3%;
+        text-align: justify;
+        background-color: aliceblue;
+      }
+
+      .res_heading{ 
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    
+
+    .main_heading{
+      background-color: darkgrey;
+      border: 2px solid black;
+      position: relative;
+    }
+
+    /* The caption of the carousel */
+    .carousel-caption{
+      color: #2fe73b;
+      font-size: larger;
+      font-weight: 900;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* The body text of about training in the homepage */
+
+    .train_body{
+      font-size: large;
+      text-align: justify;
+      font-weight: 400;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      line-height: 30px;
+      
+      }
+
+      /* The heading text of about training in the homepage */
+
+      .train_head{
+ 
+        font-weight: 900;
+        color: darkred;
+        font-size: 25px;
+      }
+
+     

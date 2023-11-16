@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/mystyle.css' %}">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Rancho&effect=shadow-multiple">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Profile of Responders</title>
+</head>
+<body>
+    <div class="container profile">
+            {% for names in profile_display %}
+            <img src="{%static 'img/'|add:names.R_image %}" height="100" width="100">
+            <p>Name= {{names.R_name}}</p>
+            <p>Age= {{names.R_age}}</p>
+            <p>City= {{names.R_city}}</p>
+            <p>Gender= {{names.R_gender}}</p>
+            <p>Age= {{names.R_age}}</p>
+            <p>Academic Level= {{names.R_academy}}</p>
+            <p>Phone No= {{names.R_phone}}</p>
+            <p>Email Address= {{names.R_email}}</p>
+            <p>Program= {{names.R_program}}</p>
+            {% endfor %}
+    </div>
+</body>
+</html>

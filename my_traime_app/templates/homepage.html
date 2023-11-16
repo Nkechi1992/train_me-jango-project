@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/mystyle.css' %}">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Rancho&effect=shadow-multiple">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Trainme Homepage</title>
+</head>
+<body>
+
+    <div class="container ">
+        <div class="row ">
+            <div class="col-12 main_heading ">
+                <img  src="{% static 'images/trainMe_logo.jpg' %}" height="80" width="100" alt='train Logo' />
+                <a class='float-end' href="/d_form"> <button class="btn btn-danger">Apply</button> </a>
+                <h3>
+                    <span class='float-end'> <a href="/programmes">Programmes |</a>
+                    &nbsp; &nbsp;  <a href="/web_contact">Profile |</a> 
+                    &nbsp;  &nbsp; <a href="/signup">SignUp |</a>
+                    &nbsp;  &nbsp;  <a href="/login/">Login </a>
+                    </span>
+                </h3>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-12 about_img ">
+                <h1 id='main_h' class='heading_1 mx-auto'>About our Training Platform</h1>
+                <p>
+                    The <b>trainMe.com</b> is a platform that aims to raise a 
+                    generation of young girls and women passionate about learning and improving their skills.
+                    This platform is an iniative passionately designed to brideg gender gap in education
+                    especially in the Technology sector. 
+                </p>
+                <h2 id='abt_mission' class='heading_1'> Mission</h2>
+                <p>Raise young women who are capable of utilizing their skills to change the gender
+                    narratives in the technological sector.
+                </p>
+
+                <h2 id='abt_vision' class='heading_1'> Vision</h2>
+                <p>To be recorgnised as global gender-equality training hub, creating wide reaching 
+                    impacts in the lives of young women across the globe.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div id='carousel_prog' class='carousel slide' data-bs-ride='carousel'>
+            <h2 id='snippets_h' class='bg-info border border-success topic-heading'>Snippets of Past Trainings</h2>
+            <div class='carousel-indicators'>
+
+                &nbsp;<button type="button" data-bs-target='#carousel_prog'
+                    data-bs-slide-to='0' class="active"></button>
+
+                &nbsp;<button type='button' data-bs-target='#carousel_prog' data-bs-slide-to='1' 
+                     ></button>
+
+                &nbsp;<button type='button' data-bs-target='#carousel_prog' data-bs-slide-to='2' 
+                     ></button>
+
+                &nbsp;<button type='button' data-bs-target='#carousel_prog' data-bs-slide-to='3' 
+                    ></button>
+
+            </div>
+
+            <!-- {/* Inner Carousel div */} -->
+
+            <div class='carousel-inner'>
+                <div class='carousel-item active'>
+                    <img src="{% static 'images/Women-in-tech-564.webp' %}" height="10%" width="100%" alt='Training-1' className='d-block'  /> 
+                    <div class='carousel-caption'>
+                        <h3>Calcultta, India</h3>
+                        <p>High School Teenage School Girls in Training Session</p>
+                    </div>
+                </div>
+
+                <div class='carousel-item'>
+                    <img src="{% static 'images/Womentech560.jpg' %}" height="10%" width="100%" alt='Training-2' className='d-block'  />
+                    <div class='carousel-caption'>
+                        <h3>Ontario, Canada</h3>
+                        <p>Presentation time during our mid-career womens' Training Sessions</p>
+                    </div>
+                </div>
+
+                <div class='carousel-item'>
+                    <img src="{% static 'images/women-in-tech561.jpg' %}" height="10%" width="100%" alt='Training-3' className='d-block'  />
+                    <div class='carousel-caption'>
+                        <h3>Delaware, USA</h3>
+                        <p>On-going Mentoring Session for Upcoming Designers</p>
+                    </div>
+                </div>
+
+                <div class='carousel-item'>
+                    <img src="{% static 'images/Women-in-tech-562.jpg' %}" height="10%" width="100%" alt='Training-4' className='d-block'  />
+                    <div class='carousel-caption'>
+                        <h3>Nairobi, Kenya</h3>
+                        <p>Training Sessions for Secondary School Girls</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- {/* Right and left control button */} -->
+            <button class='carousel-control-prev' type='button' data-bs-target='#carousel_prog' data-bs-slide='prev'>
+                <span class='carousel-control-prev-icon'></span>
+            </button>
+
+            <button class='carousel-control-next' type='button' data-bs-target='#carousel_prog' data-bs-slide='next'>
+                <span class='carousel-control-next-icon'></span>
+            </button>
+            </div> 
+
+        
+        
+            <div class='row events bg-light'> 
+                <div class='col-12 '>
+                    <h2 class='bg-info border border-success topic-heading'>Upcoming Events</h2>
+                
+                    <img class='card-img-top' src="{% static 'images/Workspace.jpg' %}" alt='Google Workspace' />
+                    <div class='card-body'>
+                        <h4 id='train_mainh' class='card-title train_head'> 6-weeks Training on Remote Work Efficiency Using the
+                            the Google Workspace. </h4>
+                        <p class='card-body train_body'>The training will provide learners with skills to optimize their remote work efficiency using the Googlespace platform.
+                            Learnes will be introduced to the various Google tools that would support their remote work experience.
+                            The training will cover basics of understanding and 
+                            navigating the Google Workspace, accessing and utilizing Google products that aids and 
+                            optimizes collaborative work. To access the Google Workspace, participants must have a <b>Gmail account.</b></p> 
+                        
+                            <h5 class='train_head'>Mode of Training</h5> 
+                            <p class='train_body'> The training will be conducted online in two batches. There will be 3 weeks training for each 
+                            each batch of 10  participants. </p>
+                           
+                        
+                            <h5 class='train_head'>Who can attend the training</h5>
+                           <p class='train_body'> To participate in the training, you must have the following eligibilities. </p> 
+                            <ul class='train_body'>
+                                <li>
+                                  Must be a female between the ages of 18-35  
+                                </li>
+                                <li>
+                                  Have access to a desktop or a laptop (no use of phone) 
+                                </li>
+                                <li>
+                                  Install zoom or microsoft teams 
+                                </li>
+                                <li>
+                                  Be willing to attend the three sessions and complete a task 
+                                </li>
+                                <li>
+                                  Generally, be interested in learning and open to new contents. 
+                                </li>
+                            </ul>
+                        
+                            <p class="train_body">
+                                Click the button below to apply
+                                <a href="/d_form"> <button class="btn btn-success"> Apply Now</button></a>
+                            </p>
+                    </div>
+
+                    
+
+                </div>
+         
+         
+         
+                
+    </div>
+   
+</body>
+
+<footer>
+    <p class="footer">Connect with us:</p> 
+     <p class="foot_link">
+         <a href="https://www.facebook.com/">Facebook |</a>
+         <a href="https://twitter.com/">Twitter |</a>
+         <a href="https://www.instagram.com/">Instagram |</a>
+         <a href="https://www.youtube.com/">Youtube |</a>
+     </p>
+ </footer>   
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/mystyle.css' %}">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Rancho&effect=shadow-multiple">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="{% static 'style/mystyle.css' %}">
+    <title>Responder List</title>
+</head>
+<body>
+   <div class="container responders_list">
+    <div class="res_heading">
+        <h2>Here are the lists of the Responders</h2>
+        <h5> <i>Click the link to view your profile</i> </h5>
+    </div>
+    
+    <ol>
+        {% for names in res_form %}
+        <li> Name= {{names.R_name}}, Age= {{names.R_age}}, City= {{names.R_city}}, Gender= {{names.R_gender}},
+            Academic Level= {{names.R_academy}}, Phone Number= {{names.R_phone}}, Email= {{names.R_email}}, 
+            Program= {{names.R_program}} <p><a href="/webprofile/{{names.id}}">View Profile</a> </p> </li>
+        {% endfor %}
+    </ol>
+   </div> 
+</body>
+</html>
