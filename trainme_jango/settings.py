@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'jango_projbase',
         'USER': 'root',
-        'PASSWORD': 'NwunyeEdu20$',
+        'PASSWORD': 'xxxx',
         'HOST':'localhost',
         'PORT':'3306',
     }
